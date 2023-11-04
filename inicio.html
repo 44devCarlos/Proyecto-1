@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pagina de Inicio</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav">
+				<ul class="nav__ul">
+					<li><a href="">Inicio</a></li>
+					<li><a href="">Cines</a></li>
+					<li><a href="">Cartelera</a></li>
+					<li><a href="">Preguntas Frecuentes</a></li>
+				</ul>
+			</nav>
+
+			<section class="header__section1">
+				<section class="section1__img1">
+					<img class="img__logo" src="img\LOGO.png" alt="" />
+				</section>
+				<section class="section1__input">
+					<input
+						id="buscador"
+						class="input__search"
+						type="search"
+						placeholder="Busca una película"
+					/>
+					<svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+						<g>
+							<path
+								d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+							></path>
+						</g>
+					</svg>
+				</section>
+				<section class="section1__user">
+					<img class="user__logo" src="img\logo_user.png" alt="" />
+					<p class="section1__p">Nombre de usuario</p>
+					<input id="checkbox" type="checkbox" />
+					<label class="toggle" for="checkbox">
+						<section id="bar1" class="bars"></section>
+						<section id="bar3" class="bars"></section>
+					</label>
+				</section>
+			</section>
+
+			<section class="header__section2">
+				<select
+					class="section2__select1"
+					name="provincias"
+					id="provincias-select"
+				>
+					<option value="">Provincias</option>
+					<option value="">Panamá</option>
+					<option value="">Coclé</option>
+				</select>
+				<select class="section2__select2" name="cines" id="cines-select">
+					<option value="">Cines</option>
+					<option value="">Cinemark</option>
+					<option value="">Cinepolis</option>
+				</select>
+			</section>
+		</header>
+
+		<section class="carrusel">
+			<label for="leftArrow" id="flechaIzquierda">&#9664;</label>
+			<label for="rigthArrow" id="flechaDerecha">&#9654;</label>
+			<ul class="carrusel__item">
+				<li id="item1">
+					<img src="img\uno.jpg" alt="" />
+				</li>
+				<li id="item2">
+					<img src="img\dos.jpg" alt="" />
+				</li>
+				<li id="item3">
+					<img src="img\tres.jpg" alt="" />
+				</li>
+				<li id="item4">
+					<img src="img\cuatro.jpg" alt="" />
+				</li>
+				<li id="item5">
+					<img src="img\cinco.jpg" alt="" />
+				</li>
+				<li id="item6">
+					<img src="img\seis.jpg" alt="" />
+				</li>
+			</ul>
+
+			<ul class="carrusel__menu">
+				<li>
+					<a href="#item1">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+				<li>
+					<a href="#item2">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+				<li>
+					<a href="#item3">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+				<li>
+					<a href="#item4">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+				<li>
+					<a href="#item5">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+				<li>
+					<a href="#item6">
+						<section class="menu__circle"></section>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="container">
+			<section class="tendencia">
+				<section class="tendencia__title">
+					<h1>Tendencia</h1>
+				</section>
+				<section class="tendencia__leftarrow">
+					<label for="leftArrow" id="flechaIzquierda">&#9664;</label>
+				</section>
+				<section class="tendencia__rightarrow">
+					<label for="rigthArrow" id="flechaDerecha">&#9654;</label>
+				</section>
+				<section class="tendencia__img">
+					<img src="img\corazones-acero.png" alt="" />
+					<img src="img\gigantesdeacero.png" alt="" />
+					<img id="img__central" src="img\godzilla-kong.png" alt="" />
+					<img src="img\sonic.png" alt="" />
+					<img src="img\talktome.png" alt="" />
+				</section>
+			</section>
+
+			<section class="cartelera">
+				<section class="cartelera__title">
+					<h1>Cartelera</h1>
+				</section>
+				<section class="cartelera__img">
+					<img src="img\corazones-acero.png" alt="" />
+					<img src="img\gigantesdeacero.png" alt="" />
+					<img src="img\godzilla-kong.png" alt="" />
+					<img src="img\sonic.png" alt="" />
+				</section>
+				<section class="cartelera__downarrow">
+					<label for="downArrow" id="flechaAbajo">&#9662;</label>
+				</section>
+			</section>
+
+			<section class="info">
+				<section class="info__card">
+					<section class="card">
+						<img src="img\uno.jpg" alt="" />
+						<p>evento especial evento especial evento especial</p>
+						<button>más info</button>
+					</section>
+				</section>
+				<section class="info__card">
+					<section class="card">
+						<img src="img\uno.jpg" alt="" />
+						<p>evento especial evento especial evento especial</p>
+						<button>más info</button>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<footer>
+			<section class="footer__section">
+				<ul>
+					<li>
+						<a href=""><img src="img\LOGO.png" alt="" />Preguntas frecuentes</a>
+					</li>
+					<li>
+						<a href=""><img src="img\LOGO.png" alt="" />Atención al cliente</a>
+					</li>
+					<li>
+						<a href=""
+							><img src="img\LOGO.png" alt="" />Política de privacidad</a
+						>
+					</li>
+					<li>
+						<a href=""
+							><img src="img\LOGO.png" alt="" />Política de la Empresa</a
+						>
+					</li>
+					<li>
+						<a href=""
+							><img src="img\LOGO.png" alt="" />Creadores de la página</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section class="footer__social">
+				<img src="img\LOGO.png" alt="" />
+				<img src="img\LOGO.png" alt="" />
+				<img src="img\LOGO.png" alt="" />
+			</section>
+		</footer>
+	</body>
+</html>
